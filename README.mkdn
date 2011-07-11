@@ -1,0 +1,32 @@
+JQuery Editable Plugin
+======================
+
+jquery.editable is a simple plugin. Basically, it converts div element
+into input element by using the original div's rel as the name for the
+new input element. It is helpful for in-place editing.
+
+I use it in one of my FLOChip(http://flochip.com) project.
+
+Usage
+=====
+
+    $('selector').editable()
+
+Options
+=======
+
+- myEditableClass: class that is being attached to the new input element.
+  default: editable-input
+- onClickCallback: callback that is being called after the div element
+  is clicked.
+- onBlurCallback: callback that is being called after you leave the new
+  input element.
+
+
+Note
+====
+
+This plugin is written in coffeescript, so, when you are working on it,
+please run:
+
+    cake watch
